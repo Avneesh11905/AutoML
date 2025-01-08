@@ -1,0 +1,50 @@
+{
+  "name": "nextjs-fastapi",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "fastapi-dev": "venv/bin/pip install -r requirements.txt && venv/bin/uvicorn api.index:app --reload",
+    "next-dev": "next dev",
+    "next-start": "next start",
+    "dev": "concurrently \"npm run next-dev\" \"npm run fastapi-dev\"",
+    "build": "next build",
+    "start": "concurrently \"npm run next-start\" \"npm run fastapi-dev\"",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@eslint/config-array": "^0.19.1",
+    "@eslint/object-schema": "^2.1.5",
+    "@mantine/charts": "^7.15.2",
+    "@mantine/core": "^7.15.2",
+    "@mantine/dropzone": "^7.15.2",
+    "@mantine/form": "^7.15.2",
+    "@mantine/hooks": "^7.15.2",
+    "@mantine/modals": "^7.15.2",
+    "@mantine/notifications": "^7.15.2",
+    "@tabler/icons-react": "^3.27.1",
+    "@types/node": "22.5.5",
+    "@types/react": "18.3.8",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.20",
+    "concurrently": "^9.0.1",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4",
+    "glob": "^11.0.0",
+    "jose": "^5.9.6",
+    "jsonwebtoken": "^9.0.2",
+    "lru-cache": "^11.0.2",
+    "next": "^14.2.13",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "^2.15.0",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "3.4.12",
+    "typescript": "5.6.2"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.7",
+    "postcss": "^8.4.49",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1"
+  }
+}
