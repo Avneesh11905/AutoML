@@ -41,3 +41,4 @@ venv
 /api/test.py
 /api/data.csv
 /api/Titanic.xlsx
+/api/data.db
